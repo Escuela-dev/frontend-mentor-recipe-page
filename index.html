@@ -106,11 +106,12 @@
           margin: 2rem 0 1.25rem;
         }
         p {
-          margin: 0.75rem 0 2rem;
+          margin: 0.75rem 0 1rem;
           line-height: 1.5rem;
         }
         .preparation {
           border-radius: 0.75rem;
+          margin-top: 2rem;
           padding: 1.75rem 1.75rem 1.5rem;
           background: var(--rose-50);
           h2 {
@@ -150,10 +151,33 @@
         }
         hr {
           margin: 1.75rem 0 2rem;
-          border-top: 0.5px double var(--stone-150);
+          border-top: 0.5px solid var(--stone-150);
+        }
+        table {
+          border-collapse: collapse;
+          margin: 0 1rem 0 0;
+          width: 100%;
+          th {
+            text-align: left;
+            font-weight: 400;
+            padding-left: 2rem;
+            width: 50%;
+          }
+          tr {
+            border-bottom: 1px solid var(--stone-150);
+          }
+          tr:last-child {
+            border-bottom: 0;
+          }
+          td {
+            color: var(--brown-800);
+            font-weight: 700;
+            padding: 0.75rem 0 1rem;
+          }
         }
       }
       .attribution {
+        margin-top: 2rem;
         font-size: 11px;
         text-align: center;
       }
@@ -222,8 +246,30 @@
       </ol>
       <hr />
       <h2>Nutrition</h2>
-      The table below shows nutritional values per serving without the
-      additional fillings. Calories 277kcal Carbs 0g Protein 20g Fat 22g
+      <p>
+        The table below shows nutritional values per serving without the
+        additional fillings.
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <th scope="row">Calories</th>
+            <td>277kcal</td>
+          </tr>
+          <tr>
+            <th scope="row">Carbs</th>
+            <td>0g</td>
+          </tr>
+          <tr>
+            <th scope="row">Protein</th>
+            <td>20g</td>
+          </tr>
+          <tr>
+            <th scope="row">Fat</th>
+            <td>22g</td>
+          </tr>
+        </tbody>
+      </table>
 
       <div class="attribution">
         Challenge by
